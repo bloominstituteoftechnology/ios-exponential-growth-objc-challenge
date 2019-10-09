@@ -1,5 +1,5 @@
 
-## Challenge
+## iOS (Objective-C) Code Challenge - Exponential Growth
 
 *The king was a big chess enthusiast and had the habit of challenging wise visitors to a game of chess. One day a traveling sage was challenged by the king. To motivate his opponent the king offered any reward that the sage could name. The sage modestly asked just for a few grains of rice in the following manner: the king was to put a single grain of rice on the first chess square and double it on every consequent one.*
 
