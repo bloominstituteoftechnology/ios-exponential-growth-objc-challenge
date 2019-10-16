@@ -23,7 +23,7 @@
 }
 
 
-- (NSDecimalNumber *)grainsOnBoard {
+- (unsigned long long)grainsOnBoard {
     unsigned long long result = 0;
     for (int i = 1; i < 65; i++) {
         result += [self grainsOnSquareNumber:i];
