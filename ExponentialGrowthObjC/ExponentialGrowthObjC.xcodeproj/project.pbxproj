@@ -13,6 +13,7 @@
 		2245E1B122E89D4F00656B26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2245E1B022E89D4F00656B26 /* main.m */; };
 		2245E1BC22E89D5000656B26 /* ExponentialGrowthObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2245E1BB22E89D5000656B26 /* ExponentialGrowthObjCTests.m */; };
 		2245E1C822E89FE300656B26 /* GrainsOfRice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2245E1C722E89FE300656B26 /* GrainsOfRice.m */; };
+		753C0FD523576F950062BEB4 /* GrainsOfRice.h in Sources */ = {isa = PBXBuildFile; fileRef = 22FEB6EA22E8A240006909BE /* GrainsOfRice.h */; };
 		BDD89F2922E91AE80060870E /* GrainsOfRice.m in Sources */ = {isa = PBXBuildFile; fileRef = 2245E1C722E89FE300656B26 /* GrainsOfRice.m */; };
 /* End PBXBuildFile section */
 
@@ -212,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753C0FD523576F950062BEB4 /* GrainsOfRice.h in Sources */,
 				2245E1BC22E89D5000656B26 /* ExponentialGrowthObjCTests.m in Sources */,
 				BDD89F2922E91AE80060870E /* GrainsOfRice.m in Sources */,
 			);
@@ -355,9 +357,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ExponentialGrowthObjC/ExponentialGrowthObjC.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = 8367QTYVY6;
 				INFOPLIST_FILE = ExponentialGrowthObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -373,9 +376,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ExponentialGrowthObjC/ExponentialGrowthObjC.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = 8367QTYVY6;
 				INFOPLIST_FILE = ExponentialGrowthObjC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -392,7 +396,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = 8367QTYVY6;
 				INFOPLIST_FILE = ExponentialGrowthObjCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -411,7 +415,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = 8367QTYVY6;
 				INFOPLIST_FILE = ExponentialGrowthObjCTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
