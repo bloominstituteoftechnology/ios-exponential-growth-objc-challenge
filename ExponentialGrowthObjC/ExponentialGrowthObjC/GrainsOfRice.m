@@ -8,21 +8,51 @@
 
 #import "GrainsOfRice.h"
 
+@interface GrainsOfRice ()
+
+@property NSMutableArray *riceBoard;
+
+@end
+
 @implementation GrainsOfRice
 
-// Test your logic with the unit tests (Command + U)
+- (instancetype)init
+{
+	self = [super init];
+	if (self) {
+		[self fillRiceBoard];
+	}
+	return self;
+}
+
+- (void)fillRiceBoard {
+	const int CHESS_BOARD_SQUARES = 64;
+	self.riceBoard = [[NSMutableArray alloc] initWithCapacity:CHESS_BOARD_SQUARES];
+	self.riceBoard[0] = @1;
+	for (int index = 1; index <= CHESS_BOARD_SQUARES; index++) {
+		unsigned long long previousSquare = [self.riceBoard[index - 1] longLongValue];
+		unsigned long long currentSquare = previousSquare * 2;
+		self.riceBoard[index] = [[NSNumber alloc] initWithLongLong:currentSquare];
+	}
+}
 
 - (unsigned long long)grainsOnSquareNumber:(NSInteger)number {
-    #warning Implement this method 1st
-
-    return 0;
+	int index = [[[NSNumber alloc] initWithInteger:number - 1] intValue];
+	if (index > 0 && index < self.riceBoard.count) {
+		return [self.riceBoard[index] longLongValue];
+	}
+	return -1;
 }
 
 
 - (unsigned long long)grainsOnBoard {
-    #warning Implement this method 2nd
+	unsigned long long totalCount = 0;
+	
+	for (NSNumber *riceOnSquare in self.riceBoard) {
+		totalCount += [riceOnSquare longLongValue];
+	}
     
-    return 0;
+    return totalCount;
 }
 
 @end
