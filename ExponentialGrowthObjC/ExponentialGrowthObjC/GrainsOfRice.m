@@ -13,16 +13,23 @@
 // Test your logic with the unit tests (Command + U)
 
 - (unsigned long long)grainsOnSquareNumber:(NSInteger)number {
-    #warning Implement this method 1st
-
-    return 0;
+    
+    
+   if (number <= 0 || number > 64) {
+        return -1;
+    } else {
+        return pow(2, number - 1);
+    }
 }
 
 
 - (unsigned long long)grainsOnBoard {
-    #warning Implement this method 2nd
+    unsigned long long result = 0;
+    for (int i = 1; i < 65; i++) {
+        result += [self grainsOnSquareNumber:i];
+    }
     
-    return 0;
+    return result;
 }
 
 @end
