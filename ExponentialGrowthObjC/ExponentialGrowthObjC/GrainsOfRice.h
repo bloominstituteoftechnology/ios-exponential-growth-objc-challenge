@@ -11,8 +11,8 @@
 
 @interface GrainsOfRice : NSObject
 
-- (unsigned long long)grainsOnSquareNumber:(NSInteger)number;
+- (NSDecimalNumber *)grainsOnSquareNumber:(NSInteger)number;
 
-- (unsigned long long)grainsOnBoard;
+- (NSDecimalNumber *)grainsOnBoard;
 
 @end
