@@ -25,11 +25,11 @@ NS_ASSUME_NONNULL_BEGIN
 	XCTAssertEqualObjects(expected, result);
 }
 
-//- (void)testNumberOfGrainsOnSquare2 {
-//	long long expected = 2;
-//	long long result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:2];
-//	XCTAssertEqual(expected, result);
-//}
+- (void)testNumberOfGrainsOnSquare2 {
+	NSDecimalNumber *expected = [NSDecimalNumber decimalNumberWithString:@"2"];
+	NSDecimalNumber *result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:2];
+	XCTAssertEqualObjects(expected, result);
+}
 
 - (void)testNumberOfGrainsOnSquare3 {
 	NSDecimalNumber *expected = [NSDecimalNumber decimalNumberWithString:@"4"];
@@ -37,17 +37,17 @@ NS_ASSUME_NONNULL_BEGIN
 	XCTAssertEqualObjects(expected, result);
 }
 
-//- (void)testNumberOfGrainsOnSquare4 {
-//	unsigned long long expected = 8;
-//	unsigned long long result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:4];
-//	XCTAssertEqual(expected, result);
-//}
+- (void)testNumberOfGrainsOnSquare4 {
+	NSDecimalNumber *expected = [NSDecimalNumber decimalNumberWithString:@"8"];
+	NSDecimalNumber *result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:4];
+	XCTAssertEqualObjects(expected, result);
+}
 
-//- (void)testNumberOfGrainsOnSquare16 {
-//	unsigned long long expected = 32768;
-//	unsigned long long result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:16];
-//	XCTAssertEqual(expected, result);
-//}
+- (void)testNumberOfGrainsOnSquare16 {
+	NSDecimalNumber *expected = [NSDecimalNumber decimalNumberWithString:@"32768"];
+	NSDecimalNumber *result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:16];
+	XCTAssertEqualObjects(expected, result);
+}
 
 - (void)testNumberOfGrainsOnSquare32 {
 	NSDecimalNumber *expected = [NSDecimalNumber decimalNumberWithString:@"2147483648"];
