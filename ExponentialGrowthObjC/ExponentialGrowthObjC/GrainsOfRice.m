@@ -12,17 +12,25 @@
 
 // Test your logic with the unit tests (Command + U)
 
-- (unsigned long long)grainsOnSquareNumber:(NSInteger)number {
-    #warning Implement this method 1st
+- (NSDecimalNumber *)grainsOnSquareNumber:(NSInteger)number {
+	if (number <= 0) {
+		return [[NSDecimalNumber alloc] initWithInt:-1];
+	}
+	NSDecimalNumber *two = [[NSDecimalNumber alloc] initWithInt:2];
+	NSDecimalNumber *grains = [two decimalNumberByRaisingToPower:number - 1];
 
-    return 0;
+	return grains;
 }
 
 
-- (unsigned long long)grainsOnBoard {
-    #warning Implement this method 2nd
-    
-    return 0;
+- (NSDecimalNumber *)grainsOnBoard {
+
+	NSDecimalNumber *total = [[NSDecimalNumber alloc] initWithInt:0];
+	for (int i = 1; i <= 64; i++) {
+		total = [total decimalNumberByAdding:[self grainsOnSquareNumber:i]];
+	}
+
+	return total;
 }
 
 @end
