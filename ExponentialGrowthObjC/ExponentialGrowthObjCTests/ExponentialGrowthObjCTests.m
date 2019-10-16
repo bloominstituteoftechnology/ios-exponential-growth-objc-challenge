@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (void)testNumberOfGrainsOnSquare1 {
-	NSDecimalNumber *expected = [NSDecimalNumber numberWithInt:1];
+	NSDecimalNumber *expected = [NSDecimalNumber decimalNumberWithString:@"1"];
 	NSDecimalNumber *result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:1];
 	XCTAssertEqualObjects(expected, result);
 }
@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 //}
 
 - (void)testNumberOfGrainsOnSquare3 {
-	NSDecimalNumber *expected = [NSDecimalNumber numberWithInt:4];
+	NSDecimalNumber *expected = [NSDecimalNumber decimalNumberWithString:@"4"];
 	NSDecimalNumber *result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:3];
 	XCTAssertEqualObjects(expected, result);
 }
@@ -50,13 +50,13 @@ NS_ASSUME_NONNULL_BEGIN
 //}
 
 - (void)testNumberOfGrainsOnSquare32 {
-	NSDecimalNumber *expected = [NSDecimalNumber numberWithInteger:2147483648];
+	NSDecimalNumber *expected = [NSDecimalNumber decimalNumberWithString:@"2147483648"];
 	NSDecimalNumber *result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:32];
 	XCTAssertEqualObjects(expected, result);
 }
 
 - (void)testNumberOfGrainsOnSquare64 {
-	NSDecimalNumber *expected = [NSDecimalNumber numberWithUnsignedLongLong:9223372036854775808ULL];
+	NSDecimalNumber *expected = [NSDecimalNumber decimalNumberWithString:@"9223372036854775808"];
 	NSDecimalNumber *result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:64];
 	XCTAssertEqualObjects(expected, result);
 }
@@ -68,13 +68,13 @@ NS_ASSUME_NONNULL_BEGIN
 //}
 
 - (void)testNumberOfGrainsOnSquareNeg1 {
-	NSDecimalNumber *expected = [NSDecimalNumber numberWithInt:-1];
+	NSDecimalNumber *expected = [NSDecimalNumber decimalNumberWithString:@"-1"];
 	NSDecimalNumber *result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:-1];
 	XCTAssertEqualObjects(expected, result);
 }
 
 - (void)testNumberOfGrainsOnSquare0 {
-	NSDecimalNumber *expected = [NSDecimalNumber numberWithInt:-1];
+	NSDecimalNumber *expected = [NSDecimalNumber decimalNumberWithString:@"-1"];
 	NSDecimalNumber *result = [[[GrainsOfRice alloc] init] grainsOnSquareNumber:0];
 	XCTAssertEqualObjects(expected, result);
 }
