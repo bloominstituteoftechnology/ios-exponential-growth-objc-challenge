@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "GrainsOfRice.h"
+#import "../ExponentialGrowthObjC/GrainsOfRice.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
