@@ -13,16 +13,32 @@
 // Test your logic with the unit tests (Command + U)
 
 - (unsigned long long)grainsOnSquareNumber:(NSInteger)number {
-    #warning Implement this method 1st
-
-    return 0;
+    if (number < 0 || number > 64) {
+        return -1;
+    } else if (number == 0) {
+        // The instructions seemed to say to put zero here, but the unit test is expecting -1
+        return -1;
+    }
+    
+    unsigned long long result = 1;
+    for (NSInteger i = 1; i < number; i++) {
+        result *= 2;
+    }
+    
+    return result;
 }
 
 
 - (unsigned long long)grainsOnBoard {
-    #warning Implement this method 2nd
+    unsigned long long result = 1;
+    unsigned long long currentSquare = 1;
     
-    return 0;
+    for (NSInteger i = 1; i < 64; i++) {
+        currentSquare *= 2;
+        result += currentSquare;
+    }
+    
+    return result;
 }
 
 @end
