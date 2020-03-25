@@ -13,9 +13,15 @@
 // Test your logic with the unit tests (Command + U)
 
 - (unsigned long long)grainsOnSquareNumber:(NSInteger)number {
-    #warning Implement this method 1st
-
-    return 0;
+    long total = 0;
+    long grains = 0;
+    for (long i = 0; i <= 64; i++) {
+        for (int k = 0; k <= 64; k++) {
+            grains = (i * 2);
+            NSLog(@"Square %d = %li grains", k, grains);
+        }
+    }
+    return grains - 1;
 }
 
 
